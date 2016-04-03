@@ -1,0 +1,14 @@
+,January,February,March,April,May,June,July,August,September,October,November,December
+"""Adult Circulation""",3120,3665,3765,3253,3312,3132,3112,3323,3786,3653,3366,3378
+"""Juvenile Circulation""",2562,2786,2892,2763,2836,2937,2832,2415,2361,2531,2654,2487
+"""Reference""",200,278,290,210,215,231,198,181,205,224,245,116
+"""Incoming Interlibrary loans""",17,19,21,12,10,9,8,8,14,12,13,9
+"""Outgoing Interlibrary loans""",12,15,10,7,13,5,7,9,11,14,14,10
+"""Programs Adults""",4,4,4,4,4,4,4,4,4,4,4,4
+"""Program Attendance Adults""",10,10,9,10,9,10,8,7,10,10,8,9
+"""Programs Young Adults""",4,4,4,4,4,4,4,4,4,4,4,4
+"""Program Attendance Young Adults""",15,14,13,15,14,18,19,19,13,14,14,17
+"""Programs Children""",4,4,4,4,4,4,4,4,4,4,4,4
+"""Program Attendance Children""",20,20,19,18,17,14,13,14,19,20,20,14
+"""Computer/Internet Use""",13014,12989,12995,13292,13009,11978,11898,11839,12939,13117,13200,12713
+"""Total Library users""",13100,13099,13078,13190,13000,12078,12098,12076,13001,13014,13204,13021
