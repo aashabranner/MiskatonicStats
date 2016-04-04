@@ -1,0 +1,30 @@
+mianstats<-read.csv("MiskatonicAnnualStats1.csv", header=TRUE, sep=",", quote = "\"", dec = ".", fill=TRUE, comment.char="") 
+#this makes the .csv file into a readable R dataframe called 'mianstats'
+mianstats2<- data.frame(mianstats, row.names= TRUE, check.rows = TRUE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(mianstats))
+#this establishes the rownames and colnames so they are not computed as factors
+meanadult<-mianstats2[1,]
+#this pulls the column numbers for the total annual mean of a specific row of information,
+#in this case it is the adult circulting materials
+numadult<- as.numeric(meanadult)
+#I then coerced meanadult as a numeric vector
+mean(numadult)
+#this produces the mean of adult circulating materials, annually
+#Now I can coerce data from rows (as indexes)
+MeanTotalofRows<-function(x) { 
+allmeans<-as.numeric(apply(x, 1, mean))
+Mianstats2_Means<-cbind(x, allmeans)
+print(Mianstats2_Means)}
+> MeanTotalofRows(mianstats2)
+#A function that binds the total row mean as a new column, per specific row
+debug(MeanTotalofRows)
+MeanTotalofRows(foo)
+#to debug function, foo was mianstats2 in this case
+#debug returned no errors
+undebug(MeanTotalofRows(foo))
+#to close out the debug function
+Adult_Circ<- as.numeric(mianstats2[1,])
+#creates a numeric vector of Adult materials checked out
+Juvenile_Circulation<-as.numeric(mianstats2[2,])
+#creates a vector of juvenile materials checked out
+names<- colnames(mianstats2)
+# to establish x axis names (months of the year)
